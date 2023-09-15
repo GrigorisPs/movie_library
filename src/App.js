@@ -26,14 +26,14 @@ function App() {
   };
 
   useEffect(() => {
-    searchMovies()
+    searchMovies('')
   }, [])
   return (
     <div className="App">
-      <h1>Movies</h1>
+      <h1>Movies Library</h1>
 
       <div className="search" onKeyDown={handleKeyDown}>
-        <input placeholder='search for movies' type='text' value={searchInput}
+        <input placeholder='search for movies' type='text' value={searchInput || ''}
           onChange={(e) => { setSearchInput(e.target.value) }}
         />
         <img className='movieImage' src={search} alt='search'
@@ -49,7 +49,7 @@ function App() {
           </div>
         ) : (
           <div className='empty'>
-            <h2>No movies found</h2> </div>
+            <h2>Enter a movie name</h2> </div>
 
         )}
 
