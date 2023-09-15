@@ -1,3 +1,19 @@
+
+
+# Mini movie Library made with Reactjs
+
+- This is a movie library search project made with Reactjs. 
+- Simple use of react hooks such as useState,useEffect
+- Api calls with TMDB api
+
+## TO DO
+
+- Input validation form 
+- Single Movie page with more Movie Info
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
